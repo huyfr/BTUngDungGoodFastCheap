@@ -1,0 +1,47 @@
+.container {
+    margin: auto;
+    margin-left: 40%;
+    margin-top: 100px;
+}
+input[type="checkbox"]
+{
+    position: relative;
+    width: 70px;
+    height: 30px;
+    -webkit-appearance: none;
+    background: gainsboro;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+input[type="checkbox"]:before
+{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: gray ;
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+}
+input:checked[type="checkbox"]:before
+{
+    left: 40px;
+}
+input.green:checked {
+    background: forestgreen;
+}
+input.blue:checked {
+    background: #008CBA;
+}
+input.red:checked {
+    background: indianred;
+}
+td {
+    width: 150px;
+    height: 100px;
+}
